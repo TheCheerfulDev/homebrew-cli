@@ -1,15 +1,11 @@
-class Jenv < Formula
+class Jenv2 < Formula
   desc "Manage your Java environment"
   homepage "https://www.jenv.be/"
   url "https://github.com/thecheerfuldev/jenv/archive/1.0.0.tar.gz"
-  sha256 "15a78dab7310fb487d2c2cad7f69e05d5d797dc13f2d5c9e7d0bbec4ea3f2980"
+  sha256 "e848a413f5675443cc3ea28a4fa643a1138187ccaa5db1ce875b8c361b05bcdd"
   license "MIT"
 
   head "https://github.com/thecheerfuldev/jenv.git"
-
-  bottle do
-    sha256 cellar: :any_skip_relocation, all: "521a1ad6e28b90f1e37893d279950e35957a0580464d639ec74c398f8da6d466"
-  end
 
   def install
     libexec.install Dir["*"]
