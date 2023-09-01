@@ -1,4 +1,4 @@
-class Workspace-manager < Formula
+class Wsm < Formula
   desc "Manage your terminal workspaces"
   homepage "https://github.com/thecheerfuldev/workspace-manager"
   url "https://github.com/thecheerfuldev/workspace-manager/archive/1.0.1.tar.gz"
