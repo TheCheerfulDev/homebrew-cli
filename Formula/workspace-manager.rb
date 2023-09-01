@@ -1,8 +1,8 @@
 class Jdk < Formula
   desc "Manage your terminal workspaces"
   homepage "https://github.com/thecheerfuldev/workspace-manager"
-  url "https://github.com/thecheerfuldev/workspace-manager/archive/1.0.0.tar.gz"
-  sha256 "e5cbeb2a868e0789e0dbefa1d081ee79103f3438a9d6acc047d17090f81b3ce3"
+  url "https://github.com/thecheerfuldev/workspace-manager/archive/1.0.1.tar.gz"
+  sha256 "aa3505b41a883becde59a8822d3382a73098070b2d31d6ea4dd93666b7487b0e"
   license "Apache-2.0"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
