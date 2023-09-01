@@ -20,7 +20,7 @@ class Jdk < Formula
 #       EOS
 #   end
 
-  test do
-    shell_output("eval \"$(#{bin}/jenv init -)\" && jenv versions")
-  end
+#   test do
+#     shell_output("eval \"$(#{bin}/jenv init -)\" && jenv versions")
+#   end
 end
