@@ -1,8 +1,8 @@
 class Wsm < Formula
   desc "Manage your terminal workspaces"
   homepage "https://github.com/thecheerfuldev/workspace-manager"
-  url "https://github.com/thecheerfuldev/workspace-manager/archive/1.0.2.tar.gz"
-  sha256 "3eaf2bb71faa27b3255ddfb1b0dfc81dd0b98e3262df268be2c3616b26e4bdd6"
+  url "https://github.com/thecheerfuldev/workspace-manager/archive/1.0.3.tar.gz"
+  sha256 "5bc79166cf46e826304c15c7ae8bbbc62cd7f3aec91b5070350d3b75ed973a36"
   license "Apache-2.0"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
