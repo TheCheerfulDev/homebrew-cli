@@ -8,7 +8,7 @@ class Gitcd < Formula
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.0.5/gitcd-go-0.0.5-darwin-arm64.tar.gz"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.0.6/gitcd-go-0.0.5-darwin-arm64.tar.gz"
       sha256 "f2f07dff543959d6690063d9db7b395239aefd0a6f6964cb6052e24b23b3ee70"
     end
     if Hardware::CPU.intel?
