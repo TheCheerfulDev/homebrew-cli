@@ -2,14 +2,14 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.0.0"
+  version "0.0.6"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.0.5/gitcd-go-0.0.5-darwin-arm64.tar.gz"
-      sha256 "f1669733245e2badbc6a10d4fa15e9619ef7f1434b62096a8b6d44adc2cf5b0e"
+      sha256 "f2f07dff543959d6690063d9db7b395239aefd0a6f6964cb6052e24b23b3ee70"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.0.5/gitcd-go-0.0.5-darwin-amd64.tar.gz"
@@ -39,6 +39,8 @@ class Gitcd < Formula
       
       export GITCD_PROJECT_HOME=<your root projects folder here>
       alias gitcd="source $(which gitcd-go-runner.sh)"
+
+      OR pick any alias that you prefer :)
 
     EOS
   end
