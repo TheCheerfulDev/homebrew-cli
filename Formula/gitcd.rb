@@ -35,23 +35,10 @@ class Gitcd < Formula
 
   def caveats
     <<~EOS
-      To activate workspace-manager, add the following lines to your `.bashrc` or `.zshrc` file:
-
-      export WSM_WORKSPACES_DIRECTORY="</path/to/wsm_workspaces_directory>"
-      source <(wsm sourcer)
-      source <(wsm completion)
-
-      The `wsm_workspaces_directory` is the directory where you will store your workspaces.
-      Use the following structure:
-
-      wsm_workspaces_directory
-                      /workspace1
-                          /bin <--- this directory will be added to the PATH
-                          /source-scripts <--- this directory will be sourced
-                      /workspace2
-                          /bin
-                          /source-scripts
-                      ...
+      To activate gitcd you need to add the following to your profile:
+      
+      export GITCD_PROJECT_HOME=<your root projects folder here>
+      alias gitcd="source $(which gitcd-go-runner.sh)"
 
     EOS
   end
