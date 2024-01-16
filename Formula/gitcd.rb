@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "0.2.0"
+  version "1.0.0"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.2.0/gitcd-go-0.2.0-darwin-arm64.tar.gz"
-      sha256 "83f0209b5fdedafddba2ffa93488d6de2062971465413ce41edf8ac60e30ed0a"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.0/gitcd-go-1.0.0-darwin-arm64.tar.gz"
+      sha256 "edd53b7a558bde9636af7859c2a0a8001140a53639c3f90e870210e13127be98"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.2.0/gitcd-go-0.2.0-darwin-amd64.tar.gz"
-      sha256 "ad668b6192bc7d78156a1c9bce01057836c3da96ad7c1524adff50bbd800ea89"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.0/gitcd-go-1.0.0-darwin-amd64.tar.gz"
+      sha256 "1ab24162c9eaa5b72e8a4608198968f3f62d7aeef5c95ae9255f62f7336f841d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.2.0/gitcd-go-0.2.0-linux-arm64.tar.gz"
-      sha256 "2d3201c952da07df0bcaf08018883430ba520169b1da32b53fb9ba850aa7dd4d"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.0/gitcd-go-1.0.0-linux-arm64.tar.gz"
+      sha256 "24b27234c5bdc1ce8786b6af79074478576e5f598d32ee9d9ed220ebec5433fa"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/0.2.0/gitcd-go-0.2.0-linux-amd64.tar.gz"
-      sha256 "23055961e69fe0981967dd860897c56690850b030e5062e1470c2d1dcc79834a"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.0/gitcd-go-1.0.0-linux-amd64.tar.gz"
+      sha256 "3d9c6da36b60e1515bd39197cb9259acf6412f3a8f98cf703365cfc49208dbe8"
     end
   end
 
@@ -43,6 +43,9 @@ class Gitcd < Formula
       OR pick any alias that you prefer :)
 
       NOTE: If GITCD_PROJECT_HOME is NOT set, your home directory will be used instead.
+
+      If you wish to automate scanning for new projects, you can add the following cron job (or similar):
+      0 7,12,15,20 * * * gcd --scan > /dev/null # scan for projects at 7am, 12pm, 3pm and 8pm
 
     EOS
   end
