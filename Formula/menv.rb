@@ -35,6 +35,16 @@ class Menv < Formula
 
   def caveats
     <<~EOS
+      To make use of menv, run the following commands:
+    
+        brew link --overwrite menv
+
+      To uninstall menv, run the following commands:
+        
+        brew unlink menv > /dev/null
+        brew unlink maven
+        brew link maven
+
       To activate menv completion you need to add the following to your profile:
       
         source <(menv completion <zsh/bash/fish>)
