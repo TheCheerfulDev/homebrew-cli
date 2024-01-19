@@ -2,29 +2,29 @@ class Menv < Formula
   desc "Manage your mvn configurations"
   homepage "https://github.com/thecheerfuldev/menv"
   license "Apache-2.0"
-  version "0.4.0"
+  version "0.5.0"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/menv/releases/download/0.4.0/menv-0.4.0-darwin-arm64.tar.gz"
-      sha256 "c99cb6aea96dd5ed83fe41276d503b14dfd7c6cdab106c592756049c55e3cdea"
+      url "https://github.com/TheCheerfulDev/menv/releases/download/0.5.0/menv-0.5.0-darwin-arm64.tar.gz"
+      sha256 "e45de7fb80d3914b7d934efc38046a18535e62e2a80916550f333e04f616f1a0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/menv/releases/download/0.4.0/menv-0.4.0-darwin-amd64.tar.gz"
-      sha256 "b87e9f8c1f84d6bc51c40f03aef74e7377ace219fbba8767a052570fcf50eb2a"
+      url "https://github.com/TheCheerfulDev/menv/releases/download/0.5.0/menv-0.5.0-darwin-amd64.tar.gz"
+      sha256 "d6d31c6b96b406544d5c7de8bccfc1cc68b29cbb807e70cee644830ed3d4e4ff"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/menv/releases/download/0.4.0/menv-0.4.0-linux-arm64.tar.gz"
-      sha256 "50fd91dee11b043bb72295c4bacb352a690cb1d3be29c715508b6200427dfc24"
+      url "https://github.com/TheCheerfulDev/menv/releases/download/0.5.0/menv-0.5.0-linux-arm64.tar.gz"
+      sha256 "c7e36365b4c95f6d5ae87cb24c875858b52552b6e753229ac6979ad8e22c90e6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/menv/releases/download/0.4.0/menv-0.4.0-linux-amd64.tar.gz"
-      sha256 "6c3d245fa453265223f15882497029baf0e317b7bc13e8eea46db8edfb5d2493"
+      url "https://github.com/TheCheerfulDev/menv/releases/download/0.5.0/menv-0.5.0-linux-amd64.tar.gz"
+      sha256 "a6d8ff35ad25d8b21d2bfb67b81e59ebfa83cf288e1e7931c735fc39ba9f3096"
     end
   end
 
