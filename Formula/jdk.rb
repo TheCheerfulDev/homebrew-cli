@@ -9,22 +9,22 @@ class Jdk < Formula
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheCheerfulDev/jdk-go/releases/download/0.1.2/jdk-0.1.2-darwin-arm64.tar.gz"
-      sha256 "2b339a8840c275aa502949bb0dce209c0340a0fd9c126f6bbb1d084e144739db"
+      sha256 "164ad649825c973501492986d70d707dec033dc3d03050ddd668c4fcc858ebf3"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TheCheerfulDev/jdk-go/releases/download/0.1.2/jdk-0.1.2-darwin-amd64.tar.gz"
-      sha256 "a9f528243b585756371bec6f648ba62ff6309bec4ae45b33fed9d629cff3a9b3"
+      sha256 "4ba02858dc57aed31bbc94fa0f7644f2bcbea7d9947fb7f9b676f372c1d6d60b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheCheerfulDev/jdk-go/releases/download/0.1.2/jdk-0.1.2-linux-arm64.tar.gz"
-      sha256 "9d2f1106f73fbc1790fd667856f1e2b8d0c527edffdd9307269c2ba1b0fe58a8"
+      sha256 "162e0b6700c972757679263a295823e8bc6652e29f1c72fa3d8582da17988652"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TheCheerfulDev/jdk-go/releases/download/0.1.2/jdk-0.1.2-linux-amd64.tar.gz"
-      sha256 "16e8b9ee8b5cd6e2dd0c8d9973f60ca6bf82fe44322fe6a66a0146138d5f9cd9"
+      sha256 "3d7be167c12211830195ca78f317249f7c8cf82741d912a319eaee4e32ed2762"
     end
   end
 
