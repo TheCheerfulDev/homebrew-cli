@@ -29,8 +29,7 @@ class Jdk < Formula
   end
 
   def install
-    bin.install "jdk-go"
-    bin.install "mvn"
+    bin.install "jdk"
   end
 
   # def caveats
