@@ -4,7 +4,7 @@ class Menv < Formula
   license "Apache-2.0"
   version "0.9.1"
 
-  head "https://github.com/thecheerfuldev/workspace-manager.git"
+  head "https://github.com/thecheerfuldev/menv.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
