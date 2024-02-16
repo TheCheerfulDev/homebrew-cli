@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.0.3"
+  version "1.0.4"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.3/gitcd-go-1.0.3-darwin-arm64.tar.gz"
-      sha256 "c963d20c0143fe21478169bc02cf4e9116033303b56a8938c9e7321ecbb193fa"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-darwin-arm64.tar.gz"
+      sha256 "36e6f54e6e8dd137d4567dca2a4306e3724b0afd37f0fc6eac2a46fb1e269815"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.3/gitcd-go-1.0.3-darwin-amd64.tar.gz"
-      sha256 "cf7cb355387fd75fefcc0355b363a07cfadd8266186f78df0ef8c1fb314b8ec9"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-darwin-amd64.tar.gz"
+      sha256 "d0130e598e2de861421943a6df980384bea42656d52d614810476da61b963df0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.3/gitcd-go-1.0.3-linux-arm64.tar.gz"
-      sha256 "69b769a77b071af4b7458b0e95ef7a08d259463baa87911b02a668628728d50f"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-linux-arm64.tar.gz"
+      sha256 "372a827ebc050c73f7b8bf1528403dd575245048d9a859bc2648371f76e17893"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.3/gitcd-go-1.0.3-linux-amd64.tar.gz"
-      sha256 "7f44d13194d9df2791a41694c45140000256e4e98896cbdbd99136a88f7cbd78"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-linux-amd64.tar.gz"
+      sha256 "fad1f83fbb18bbaca24c58047338fea3c5907daa98eb5a4f78d42fb79af8d7c2"
     end
   end
 
