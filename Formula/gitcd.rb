@@ -9,22 +9,22 @@ class Gitcd < Formula
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-darwin-arm64.tar.gz"
-      sha256 "36e6f54e6e8dd137d4567dca2a4306e3724b0afd37f0fc6eac2a46fb1e269815"
+      sha256 "1cdc23981cb571857fbf6cb2d91f11199b28e27aae6fa3cb0a4cdb25a91339a4"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-darwin-amd64.tar.gz"
-      sha256 "d0130e598e2de861421943a6df980384bea42656d52d614810476da61b963df0"
+      sha256 "4f5245c7e9f875c48a6fc5b0a1fae66761e667d1f6ed6026e5cce939aee8a9e8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-linux-arm64.tar.gz"
-      sha256 "372a827ebc050c73f7b8bf1528403dd575245048d9a859bc2648371f76e17893"
+      sha256 "4faddf329313b4be54d88629a4650a22d78613d5eabb9f0253347b472315a91c"
     end
     if Hardware::CPU.intel?
       url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.4/gitcd-go-1.0.4-linux-amd64.tar.gz"
-      sha256 "fad1f83fbb18bbaca24c58047338fea3c5907daa98eb5a4f78d42fb79af8d7c2"
+      sha256 "04bbec0e440a7625698aedb5339b2bd7c9ccdfe3d1eea1a5ec542c4e6eb6ce82"
     end
   end
 
