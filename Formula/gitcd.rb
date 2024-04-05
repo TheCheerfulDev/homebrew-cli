@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.0.5"
+  version "1.0.6"
 
   head "https://github.com/thecheerfuldev/workspace-manager.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.5/gitcd-go-1.0.5-darwin-arm64.tar.gz"
-      sha256 "1cdc23981cb571857fbf6cb2d91f11199b28e27aae6fa3cb0a4cdb25a91339a4"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.6/gitcd-go-1.0.6-darwin-arm64.tar.gz"
+      sha256 "1a921f970360c8469194433ae154f24311d53f90eddc30d52041782d5c23bb03"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.5/gitcd-go-1.0.5-darwin-amd64.tar.gz"
-      sha256 "4f5245c7e9f875c48a6fc5b0a1fae66761e667d1f6ed6026e5cce939aee8a9e8"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.6/gitcd-go-1.0.6-darwin-amd64.tar.gz"
+      sha256 "bd8586a8830cfc66f52303f5d33eba616f311c195c7e0ad707c64fb408c976f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.5/gitcd-go-1.0.5-linux-arm64.tar.gz"
-      sha256 "4faddf329313b4be54d88629a4650a22d78613d5eabb9f0253347b472315a91c"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.6/gitcd-go-1.0.6-linux-arm64.tar.gz"
+      sha256 "34d0ce61b7aae6736a575e818f7ba46f2f884b3dfb5326442c4ed13daf699c55"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.5/gitcd-go-1.0.5-linux-amd64.tar.gz"
-      sha256 "04bbec0e440a7625698aedb5339b2bd7c9ccdfe3d1eea1a5ec542c4e6eb6ce82"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.6/gitcd-go-1.0.6-linux-amd64.tar.gz"
+      sha256 "690b87b06b15ed339a31cd7b56051302b9857999fb77ee97d8a604fb7301135c"
     end
   end
 
