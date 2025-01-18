@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.0.7"
+  version "1.0.8"
 
-  head "https://github.com/thecheerfuldev/workspace-manager.git"
+  head "https://github.com/thecheerfuldev/gitcd-go.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.7/gitcd-go-1.0.7-darwin-arm64.tar.gz"
-      sha256 "00e86acedce3c5096a219f44ed79502aae01fa0718d5ede58249a1f4ec82fc45"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-darwin-arm64.tar.gz"
+      sha256 "ac0ba6546f2cc10eb018b1a6ff73a7f563e383e1e34e83a33ad6fdda3c30ff85"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.7/gitcd-go-1.0.7-darwin-amd64.tar.gz"
-      sha256 "e1458d45b00bd7427b4fe661c57c394cba8553f9d6add9c5c9025f2e5ba45067"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-darwin-amd64.tar.gz"
+      sha256 "ff84f4c1c92efdc72aac059288278d837201937e0696661709150d2dceba870f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.7/gitcd-go-1.0.7-linux-arm64.tar.gz"
-      sha256 "32ecffa869f07dc263d929f215684fb1a706859e817bfa0ef2df729db72f1d50"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-linux-arm64.tar.gz"
+      sha256 "2dfc446d7d71e031d91f1cc46429c5f3303908444d479dbde26c8a788d01902e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.7/gitcd-go-1.0.7-linux-amd64.tar.gz"
-      sha256 "ed84f2f2926a3668ad2b1009c04b77c61c873f5afc4715b29fcd3f2df6e965dc"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-linux-amd64.tar.gz"
+      sha256 "49157599ecb64bdc4d72b12e836a0de41446d5aa714a015fe1a4a7717cf135d6"
     end
   end
 
