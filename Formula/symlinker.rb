@@ -1,4 +1,4 @@
-class Gitcd < Formula
+class Symlinker < Formula
   desc "Make symlinking your dotfiles a breeze."
   homepage "https://github.com/thecheerfuldev/symlinker"
   license "Apache-2.0"
