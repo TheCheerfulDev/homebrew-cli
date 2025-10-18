@@ -2,29 +2,29 @@ class Symlinker < Formula
   desc "Make symlinking your dotfiles a breeze."
   homepage "https://github.com/thecheerfuldev/symlinker"
   license "Apache-2.0"
-  version "0.1.0"
+  version "0.2.0"
 
   head "https://github.com/thecheerfuldev/symlinker.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.1.0/symlinker-0.1.0-darwin-arm64.tar.gz"
-      sha256 "bb4240f61829cdc1a5c0aed43625fdba1689ea75066027f2942e8b04fe37d6fe"
+      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.2.0/symlinker-0.2.0-darwin-arm64.tar.gz"
+      sha256 "acd2c04ada226c8a6592329efe1438b3223afab3a38bb36023c28ec96dffe58f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.1.0/symlinker-0.1.0-darwin-amd64.tar.gz"
-      sha256 "6f533b02a991882bdef9fcf90b76b9331c2e5fa8002fe19abbbd196514502721"
+      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.2.0/symlinker-0.2.0-darwin-amd64.tar.gz"
+      sha256 "a01dc605d5c66922d7f8e54ef1d17ebbf2a4d87c30a5e1a2b69ee66594017dfc"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.1.0/symlinker-0.1.0-linux-arm64.tar.gz"
-      sha256 "abdf3fd52421548f2117d05211aa7f69aefbdc7d07eea2e1672b078981f19e22"
+      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.2.0/symlinker-0.2.0-linux-arm64.tar.gz"
+      sha256 "588105ab2c9427a9b3f1645347c98991cbad4e280f5581995ac3f07c339c98df"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.1.0/symlinker-0.1.0-linux-amd64.tar.gz"
-      sha256 "d2117b647ab7c51b69e199e9d048404aae937f07a381380cc8f20a7517f79f04"
+      url "https://github.com/TheCheerfulDev/symlinker/releases/download/0.2.0/symlinker-0.2.0-linux-amd64.tar.gz"
+      sha256 "33fce302c20966042da9448ff01ef65a6c61faf995806a58375cfefb4ec31f15"
     end
   end
 
