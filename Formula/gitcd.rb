@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.0.8"
+  version "1.1.0"
 
   head "https://github.com/thecheerfuldev/gitcd-go.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-darwin-arm64.tar.gz"
-      sha256 "ac0ba6546f2cc10eb018b1a6ff73a7f563e383e1e34e83a33ad6fdda3c30ff85"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-darwin-arm64.tar.gz"
+      sha256 "4027b0305f0246f98335aae23ef168301b8c18a29de910c61e1a6bbeacfb88d3"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-darwin-amd64.tar.gz"
-      sha256 "ff84f4c1c92efdc72aac059288278d837201937e0696661709150d2dceba870f"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-darwin-amd64.tar.gz"
+      sha256 "0ee78ab0844f09c3ef92b9c6a161a87ccd510a97b1938c2b60518fb4fe6fd218"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-linux-arm64.tar.gz"
-      sha256 "2dfc446d7d71e031d91f1cc46429c5f3303908444d479dbde26c8a788d01902e"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-linux-arm64.tar.gz"
+      sha256 "5ad8454b761d22e9ec3eaac69bf85de7c76295a29cfaacd784ef78bdde4d3013"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.0.8/gitcd-go-1.0.8-linux-amd64.tar.gz"
-      sha256 "49157599ecb64bdc4d72b12e836a0de41446d5aa714a015fe1a4a7717cf135d6"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-linux-amd64.tar.gz"
+      sha256 "48377189cbbd70cac745308777e068bd59b71785185f3b794d49fde95c72a008"
     end
   end
 
