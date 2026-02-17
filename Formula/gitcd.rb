@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.1.0"
+  version "1.1.1"
 
   head "https://github.com/thecheerfuldev/gitcd-go.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-darwin-arm64.tar.gz"
-      sha256 "4027b0305f0246f98335aae23ef168301b8c18a29de910c61e1a6bbeacfb88d3"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-darwin-arm64.tar.gz"
+      sha256 "3e9443e8edc72165a93dcc334f34c23b3dd8ffe34641dfc6825157328987ee21"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-darwin-amd64.tar.gz"
-      sha256 "0ee78ab0844f09c3ef92b9c6a161a87ccd510a97b1938c2b60518fb4fe6fd218"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-darwin-amd64.tar.gz"
+      sha256 "892cf856a6ff1f7074ce0419f5499e2fd51b21ef687ab21c77b40c0cda8e1a16"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-linux-arm64.tar.gz"
-      sha256 "5ad8454b761d22e9ec3eaac69bf85de7c76295a29cfaacd784ef78bdde4d3013"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-linux-arm64.tar.gz"
+      sha256 "6c892951c73604b860fb1382920415130a008785b1457c309ea897718a401c15"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.0/gitcd-go-1.1.0-linux-amd64.tar.gz"
-      sha256 "48377189cbbd70cac745308777e068bd59b71785185f3b794d49fde95c72a008"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-linux-amd64.tar.gz"
+      sha256 "89097e02da1a208630f070a62b77bd77e4ee3ae6b62908a513c8c8f432d5e38c"
     end
   end
 
