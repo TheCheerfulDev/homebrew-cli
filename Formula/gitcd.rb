@@ -2,29 +2,29 @@ class Gitcd < Formula
   desc "Index and navigate to your git projects"
   homepage "https://github.com/thecheerfuldev/gitcd-go"
   license "Apache-2.0"
-  version "1.1.1"
+  version "1.1.2"
 
   head "https://github.com/thecheerfuldev/gitcd-go.git"
 
   on_macos do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-darwin-arm64.tar.gz"
-      sha256 "3e9443e8edc72165a93dcc334f34c23b3dd8ffe34641dfc6825157328987ee21"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.2/gitcd-go-1.1.2-darwin-arm64.tar.gz"
+      sha256 "dfe5d73203aa78563c1ed1b596228995c22863350714decf650820f771e97609"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-darwin-amd64.tar.gz"
-      sha256 "892cf856a6ff1f7074ce0419f5499e2fd51b21ef687ab21c77b40c0cda8e1a16"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.2/gitcd-go-1.1.2-darwin-amd64.tar.gz"
+      sha256 "c2d541edeee51a843e6e4b7a5d257abc24b2bb09e28a0ce1449bbdb31db68035"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-linux-arm64.tar.gz"
-      sha256 "6c892951c73604b860fb1382920415130a008785b1457c309ea897718a401c15"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.2/gitcd-go-1.1.2-linux-arm64.tar.gz"
+      sha256 "f279dbf83b3a60af716148d771599a87dfd8c94ee9eb685ac052c1d0bd4f859d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.1/gitcd-go-1.1.1-linux-amd64.tar.gz"
-      sha256 "89097e02da1a208630f070a62b77bd77e4ee3ae6b62908a513c8c8f432d5e38c"
+      url "https://github.com/TheCheerfulDev/gitcd-go/releases/download/1.1.2/gitcd-go-1.1.2-linux-amd64.tar.gz"
+      sha256 "73e6a490293041116b022c27c94a3fc7821d987a525639f9e25398706c18b6ee"
     end
   end
 
