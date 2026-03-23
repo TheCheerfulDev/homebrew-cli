@@ -1,4 +1,4 @@
-class kurt < Formula
+class Kurt < Formula
   desc "Kubernetes Unified Resource Tree (KURT) is a helpful tool for visualizing network resources on kubernetes"
   homepage "https://github.com/thecheerfuldev/kurt"
   license "Apache-2.0"
